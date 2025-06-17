@@ -1,0 +1,208 @@
+/* Hotel Listings Styles */
+.hotel-listings-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.listings-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.listings-header h1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.sort-dropdown {
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.hotels-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  height: auto;
+ 
+}
+
+.hotel-card {
+  display: flex;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.hotel-image {
+  width: 300px;
+  flex-shrink: 0;
+}
+
+.hotel-image img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.hotel-details {
+  flex-grow: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.hotel-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.hotel-info h2 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.distance {
+  color: #666;
+  font-size: 0.875rem;
+}
+
+.hotel-rating {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.rating-text {
+  font-size: 1.25rem;
+  color: #f39c12;
+}
+
+
+.hotel-rating {
+  display: flex;
+  align-items: center;
+  text-align: right;
+  font-size: 1rem;
+  font-weight: 600;
+
+}
+.ratings{
+  display: flex;
+  flex-direction: column;
+  font-size: 1rem;
+  font-weight: 600;
+
+}
+
+.rating-badge {
+  background-color: #e6f3ff;
+  text-align: center;
+  
+  color: #0070f3;
+  padding: 4px 8px;
+  border-radius: 50px;
+  font-weight: 600;
+  margin-right: 10px;
+}
+
+.review-count {
+  color: #666;
+  font-size: 0.875rem;
+}
+
+.hotel-room-info {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.room-type {
+   font-size: 1rem;
+  font-weight: 600;
+}
+
+.room-features {
+  display: flex;
+  flex-direction: column;
+  color: #666;
+  font-size: 0.875rem;
+}
+
+.hotel-booking {
+  display: flex;
+  /* justify-content: space-between; */
+  justify-content: flex-end;
+  align-items: flex-end;
+  /* margin-top: 15px; */
+}
+
+.hotel-price {
+  text-align: right;
+}
+
+.hotel-tags {
+  display: flex;
+  gap: 10px;
+
+}
+.tag{
+  background-color: #e6f3ff;
+  color: #0070f3;
+  padding: 4px 8px;
+  border-radius: 50px;
+  font-weight: 600;
+}
+
+.price {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #0070f3;
+}
+
+.booking-period {
+  color: #666;
+  font-size: 0.875rem;
+  margin-top: 5px;
+}
+
+.booking-button {
+  background-color: #0070f3;
+  color: white;
+  border: none;
+  padding: 8px 18px;
+
+  border-radius: 50px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.booking-button:hover {
+  background-color: #0051bf;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hotel-card {
+    flex-direction: column;
+  }
+
+  .hotel-image {
+    width: 100%;
+    height: 250px;
+  }
+
+  .listings-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+}
